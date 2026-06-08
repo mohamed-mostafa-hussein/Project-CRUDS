@@ -14,7 +14,7 @@ function getTotal() {
     if (price.value != "") {
         let result = (+price.value + +taxes.value + +ads.value) - +discount.value;
         total.innerHTML = result;
-        total.style.background = "green";
+        total.style.setProperty("background", "green", "important");
     } else {
         total.innerHTML = "";
         total.style.background = "#a00d02";
