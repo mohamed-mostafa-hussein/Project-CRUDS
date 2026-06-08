@@ -14,10 +14,10 @@ function getTotal() {
     if (price.value != "") {
         let result = (+price.value + +taxes.value + +ads.value) - +discount.value;
         total.innerHTML = result;
-        total.style.setProperty("background", "green", "important");
+        total.style.backgroundColor = "green"
     } else {
         total.innerHTML = "";
-        total.style.background = "#a00d02";
+        total.style.backgroundColor = "#a00d02";
     }
 }
 
